@@ -13,6 +13,8 @@
 		0AADA6DA1C3B3E3C00251178 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AADA6D91C3B3E3C00251178 /* Images.xcassets */; };
 		0AADA6DD1C3B3E3C00251178 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AADA6DB1C3B3E3C00251178 /* LaunchScreen.xib */; };
 		0AADA6E91C3B3E3C00251178 /* SecuenciaFibonacciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AADA6E81C3B3E3C00251178 /* SecuenciaFibonacciTests.swift */; };
+		0AADA6F41C3B438500251178 /* finonacci.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AADA6F21C3B411500251178 /* finonacci.framework */; };
+		0AADA6F51C3B438500251178 /* finonacci.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AADA6F21C3B411500251178 /* finonacci.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0AADA6F61C3B438500251178 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AADA6F51C3B438500251178 /* finonacci.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0AADA6CD1C3B3E3C00251178 /* SecuenciaFibonacci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecuenciaFibonacci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AADA6D11C3B3E3C00251178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +52,7 @@
 		0AADA6E21C3B3E3C00251178 /* SecuenciaFibonacciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecuenciaFibonacciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AADA6E71C3B3E3C00251178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AADA6E81C3B3E3C00251178 /* SecuenciaFibonacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuenciaFibonacciTests.swift; sourceTree = "<group>"; };
+		0AADA6F21C3B411500251178 /* finonacci.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = finonacci.framework; path = "../finonacci/DerivedData/finonacci/Build/Products/Debug-iphonesimulator/finonacci.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AADA6F41C3B438500251178 /* finonacci.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 		0AADA6C41C3B3E3C00251178 = {
 			isa = PBXGroup;
 			children = (
+				0AADA6F21C3B411500251178 /* finonacci.framework */,
 				0AADA6CF1C3B3E3C00251178 /* SecuenciaFibonacci */,
 				0AADA6E51C3B3E3C00251178 /* SecuenciaFibonacciTests */,
 				0AADA6CE1C3B3E3C00251178 /* Products */,
@@ -122,6 +141,7 @@
 				0AADA6C91C3B3E3C00251178 /* Sources */,
 				0AADA6CA1C3B3E3C00251178 /* Frameworks */,
 				0AADA6CB1C3B3E3C00251178 /* Resources */,
+				0AADA6F61C3B438500251178 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ciclica/Desktop/inacap/finonacci/DerivedData/finonacci/Build/Products/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = SecuenciaFibonacci/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +374,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ciclica/Desktop/inacap/finonacci/DerivedData/finonacci/Build/Products/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = SecuenciaFibonacci/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
