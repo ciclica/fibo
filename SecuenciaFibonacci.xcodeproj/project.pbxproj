@@ -25,20 +25,6 @@
 			remoteGlobalIDString = 0AADA6CC1C3B3E3C00251178;
 			remoteInfo = SecuenciaFibonacci;
 		};
-		0AD935A51C46D46800846F60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AD935A01C46D46800846F60 /* finonacci.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0AADA6A61C3B2F0F00251178;
-			remoteInfo = finonacci;
-		};
-		0AD935A71C46D46800846F60 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AD935A01C46D46800846F60 /* finonacci.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0AADA6B11C3B2F0F00251178;
-			remoteInfo = finonacciTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +53,6 @@
 		0AADA6E71C3B3E3C00251178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AADA6E81C3B3E3C00251178 /* SecuenciaFibonacciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuenciaFibonacciTests.swift; sourceTree = "<group>"; };
 		0AADA6F21C3B411500251178 /* finonacci.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = finonacci.framework; path = "../finonacci/DerivedData/finonacci/Build/Products/Debug-iphonesimulator/finonacci.framework"; sourceTree = "<group>"; };
-		0AD935A01C46D46800846F60 /* finonacci.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = finonacci.xcodeproj; path = finonacci/finonacci.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +77,6 @@
 		0AADA6C41C3B3E3C00251178 = {
 			isa = PBXGroup;
 			children = (
-				0AD935A01C46D46800846F60 /* finonacci.xcodeproj */,
 				0AADA6F21C3B411500251178 /* finonacci.framework */,
 				0AADA6CF1C3B3E3C00251178 /* SecuenciaFibonacci */,
 				0AADA6E51C3B3E3C00251178 /* SecuenciaFibonacciTests */,
@@ -145,15 +129,6 @@
 				0AADA6E71C3B3E3C00251178 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0AD935A11C46D46800846F60 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0AD935A61C46D46800846F60 /* finonacci.framework */,
-				0AD935A81C46D46800846F60 /* finonacciTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,12 +199,6 @@
 			mainGroup = 0AADA6C41C3B3E3C00251178;
 			productRefGroup = 0AADA6CE1C3B3E3C00251178 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 0AD935A11C46D46800846F60 /* Products */;
-					ProjectRef = 0AD935A01C46D46800846F60 /* finonacci.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				0AADA6CC1C3B3E3C00251178 /* SecuenciaFibonacci */,
@@ -237,23 +206,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		0AD935A61C46D46800846F60 /* finonacci.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = finonacci.framework;
-			remoteRef = 0AD935A51C46D46800846F60 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		0AD935A81C46D46800846F60 /* finonacciTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = finonacciTests.xctest;
-			remoteRef = 0AD935A71C46D46800846F60 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0AADA6CB1C3B3E3C00251178 /* Resources */ = {
