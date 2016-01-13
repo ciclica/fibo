@@ -39,6 +39,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldidEndEditing(textField: UITextField) -> Bool {
            // println(" fin edicop")
+        //txt_Numero.text = "12"
+        
         return true
     }
     
@@ -48,8 +50,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // controla el largo del textfield en este caso lo dejaremos hasta 8 caracteres..
+    
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool
     {
+        
+        //  `NSCharacterSet` set de caracteres solo numeros
+        let inverseSet = NSCharacterSet(charactersInString:"0123456789").invertedSet
+        
+        // At every character in this "inverseSet" contained in the string,
+        // split the string up into components which exclude the characters
+        // in this inverse set
+        let components = string.componentsSeparatedByCharactersInSet(inverseSet)
+        
+        let string = components
+        
+        println(string)
+        println(components)
+      
+        
+        
+    
+        
         
         var length = (count(textField.text) +  count(string))
         if (length > 8) {
