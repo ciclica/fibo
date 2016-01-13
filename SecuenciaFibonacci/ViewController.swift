@@ -57,21 +57,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //  `NSCharacterSet` set de caracteres solo numeros
         let inverseSet = NSCharacterSet(charactersInString:"0123456789").invertedSet
         
-        // At every character in this "inverseSet" contained in the string,
-        // split the string up into components which exclude the characters
-        // in this inverse set
+        // rutina que evalua cada digitacion y excluye valoes que no estan en inverset
         let components = string.componentsSeparatedByCharactersInSet(inverseSet)
         
-        let string = components
+   
+        //  si count de compoenentes es 2 quiere decir que no digito un valor del inverset
+        //  por tanto retorna Falso
+        if (components.count == 2 ) { return false }
         
-        println(string)
-        println(components)
-      
-        
-        
-    
-        
-        
+       
+        //  controla el largo hasta 8 digitos...
         var length = (count(textField.text) +  count(string))
         if (length > 8) {
             return false
