@@ -7,27 +7,39 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>8D73956B-2E06-44FA-BB11-0773C8C8CB54</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SecuenciaFibonacci</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1B4A5C7E163FEF725F30331062BDB7C4A99D2840</key>
-		<string>https://github.com/ciclica/mac.git</string>
+		<string>https://github.com/ciclica/fibo.git</string>
+		<key>4DEA967F082E8DA60636C73C576D921D9BE40024</key>
+		<string>https://github.com/ciclica/fiboframe.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SecuenciaFibonacci.xcodeproj/project.xcworkspace</string>
+	<string>SecuenciaFibonacci.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1B4A5C7E163FEF725F30331062BDB7C4A99D2840</key>
 		<string>../..</string>
+		<key>4DEA967F082E8DA60636C73C576D921D9BE40024</key>
+		<string>../../../finonacci</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ciclica/mac.git</string>
+	<string>https://github.com/ciclica/fibo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>1B4A5C7E163FEF725F30331062BDB7C4A99D2840</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4DEA967F082E8DA60636C73C576D921D9BE40024</string>
+			<key>IDESourceControlWCCName</key>
+			<string>finonacci</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
